@@ -55,7 +55,10 @@ function App() {
           <button className="back-button">
             <ArrowLeft size={24} />
           </button>
-          <h1 className="header-title">Privacy Hub</h1>
+          <div className="header-title" style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginRight: '40px'}}>
+             <span style={{fontStyle: 'italic', fontWeight: 900, color: 'var(--zomato-red)', fontSize: '1.5rem', letterSpacing: '-0.5px'}}>zomato</span>
+             <span style={{fontSize: '1.125rem', fontWeight: 600, color: 'var(--text-secondary)'}}>| Privacy</span>
+          </div>
         </div>
 
         {/* Content */}
@@ -140,6 +143,7 @@ function App() {
           <div className="modal-overlay animate-fade-in">
             <div className="modal-content animate-fade-in delay-100">
               <div className="consent-header">
+                <div style={{fontStyle: 'italic', fontWeight: 900, color: 'var(--zomato-red)', fontSize: '2.5rem', letterSpacing: '-1px', marginBottom: '1.5rem'}}>zomato</div>
                 <div className="icon-wrapper">
                   <ShieldCheck size={32} />
                 </div>
